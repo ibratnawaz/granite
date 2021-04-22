@@ -17,3 +17,7 @@ ReactRailsUJS.useContext(componentRequireContext);
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+// Support component names relative to this directory:
+var components = require.context("components", true);
+ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(components);
