@@ -7,7 +7,6 @@ import CreateTask from "components/Tasks/CreateTask";
 const App = () => {
   return (
     <Router>
-      <h1>Welcome</h1>
       <Switch>
         <Route exact path="/tasks/create" component={CreateTask} />
         <Route path="/dashboard" component={Dashboard} />

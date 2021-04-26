@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "components/Container";
 import TaskForm from "components/Tasks/Form/TaskForm";
 import tasksApi from "apis/tasks";
+import Logger from "js-logger";
 
 const CreateTask = ({ history }) => {
   const [title, setTitle] = useState("");
@@ -14,7 +15,7 @@ const CreateTask = ({ history }) => {
       setLoading(false);
       history.push("/dashboard");
     } catch (error) {
-      logger.error(error);
+      Logger.error(error);
       setLoading(false);
     }
   };
