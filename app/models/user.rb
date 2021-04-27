@@ -4,6 +4,7 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 35 }
   has_many :tasks, dependent: :destroy, foreign_key: :user_id
   has_secure_password
+  has_secure_token :authentication_token
 
   validates :email, presence: true, uniqueness: true, length: { maximum: 50 }, format: { with: VALID_EMAIL_REGEX }
   validates :password, presence: true, confirmation: true, length: { minimum: 6 }
