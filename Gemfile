@@ -52,3 +52,4 @@ gem 'bcrypt', '~> 3.1.13'
 gem 'pundit'
 gem 'bundler-audit', require: false
 gem 'ruby_audit', require: false
+gem 'rake', '~> 13.0.3'
