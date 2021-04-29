@@ -53,3 +53,4 @@ gem 'pundit'
 gem 'bundler-audit', require: false
 gem 'ruby_audit', require: false
 gem 'rake', '~> 13.0.3'
+gem 'sidekiq'
