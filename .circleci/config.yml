@@ -54,7 +54,7 @@ jobs:
 
       # Generate assets
 
-      - run: bin/webpack
+      # - run: bin/webpack
       - run: bundle exec rails webpacker:compile
 
       # Unit tests
