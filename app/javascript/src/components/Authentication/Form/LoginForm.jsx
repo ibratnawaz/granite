@@ -32,7 +32,7 @@ const LoginForm = ({ handleSubmit, setEmail, setPassword, loading }) => {
             label="Email"
             type="email"
             placeholder="oliver@example.com"
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setEmail(e.target.value.toLocaleLowerCase())}
           />
           <Input
             label="Password"
