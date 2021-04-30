@@ -36,7 +36,7 @@ jobs:
 
       # Yarn install
 
-      - run: bin/yarn install --cache-folder vendor/node_modules
+      - run: bin/yarn install --cache-folder ~/.cache/yarn
 
       # Generate assets
 
