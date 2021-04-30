@@ -27,6 +27,7 @@ jobs:
       # Bundle install
 
       - run: bundle config set --local path 'vendor/bundle'
+      - run: bundle install --path vendor/bundle
 
       # Setup database
 
